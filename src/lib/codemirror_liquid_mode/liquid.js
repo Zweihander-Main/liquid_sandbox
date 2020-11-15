@@ -145,7 +145,13 @@ CodeMirror.defineMode('liquid', function (config, parserConfig) {
 			) {
 				if (typeof marker == 'string') cx.marked = marker;
 				return cont();
-			} else return cont(arguments.callee);
+			} else {
+				try {
+					return cont(arguments.callee);
+				} catch (e) {
+					return;
+				}
+			}
 		};
 	}
 

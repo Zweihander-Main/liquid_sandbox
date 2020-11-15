@@ -1,7 +1,7 @@
 import React from 'react';
 import { Liquid } from 'liquidjs';
 
-const engine = new Liquid();
+const engine = new Liquid({ strictFilters: false, strictVariables: false });
 
 type PreviewAreaProps = {
 	template: string;
