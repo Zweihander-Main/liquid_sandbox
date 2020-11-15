@@ -10,16 +10,20 @@
 }
 
 .edit-area {
-	grid-area: Template;
 	border-bottom: 1px solid white;
+	grid-area: Template;
 }
 
 .preview-area {
 	grid-area: Preview;
+	height: 50vh;
+	width: 50vw;
 }
 
 .data-area {
 	grid-area: Data;
+	height: 50vh;
+	width: 50vw;
 }
 
 .CodeMirror {
