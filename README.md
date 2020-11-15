@@ -8,6 +8,20 @@ This is a VERY quick tech demo thrown together to improve the development experi
 
 Demo available [here](https://liquid_sandbox.zweisolutions.com).
 
+## Instructions
+
+```
+npm install
+npm run start
+```
+
+## Technology used
+
+-   TypeScript
+-   Create React App
+-   CodeMirror
+-   LiquidJS
+
 ## Available for Hire
 
 I'm available for freelance, contracts, and consulting both remotely and in the Hudson Valley, NY (USA) area. [Some more about me](https://www.zweisolutions.com/about.html) and [what I can do for you](https://www.zweisolutions.com/services.html).
