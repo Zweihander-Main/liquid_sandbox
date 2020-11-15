@@ -6,7 +6,7 @@ This is a VERY quick tech demo thrown together to improve the development experi
 
 ## Demo
 
-Demo available [here](https://liquid_sandbox.zweisolutions.com).
+Demo available [here](https://liquidsandbox.zweisolutions.com).
 
 ## Instructions
 
