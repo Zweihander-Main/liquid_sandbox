@@ -16,12 +16,19 @@ const PreviewArea: React.FC<PreviewAreaProps> = ({
 }) => {
 	const [markup, setMarkup] = React.useState('');
 	React.useEffect(() => {
-		void engine
-			.parseAndRender(template || ' ', JSON.parse(data))
-			.catch(() => {
-				setMarkup('Error');
-			})
-			.then((returnMarkup) => returnMarkup && setMarkup(returnMarkup));
+		try {
+			const dataObject = JSON.parse(data) as Record<string, unknown>;
+			void engine
+				.parseAndRender(template || ' ', dataObject)
+				.catch(() => {
+					setMarkup('Error');
+				})
+				.then(
+					(returnMarkup) => returnMarkup && setMarkup(returnMarkup)
+				);
+		} catch (e) {
+			setMarkup('Error');
+		}
 	}, [template, data]);
 	return (
 		<div
