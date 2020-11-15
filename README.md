@@ -2,7 +2,11 @@
 
 > Play around with [Liquid](https://shopify.github.io/liquid/) without making a mess
 
-This is a VERY quick demo thrown together to improve the development experience of liquid templates, particularly those used in [Huginn](https://github.com/huginn/huginn).
+This is a VERY quick tech demo thrown together to improve the development experience of liquid templates, particularly those used in [Huginn](https://github.com/huginn/huginn).
+
+## Demo
+
+Demo available [here](https://liquid_sandbox.zweisolutions.com).
 
 ## Available for Hire
 
