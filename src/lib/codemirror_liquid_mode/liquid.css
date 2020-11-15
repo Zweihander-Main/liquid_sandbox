@@ -1,0 +1,67 @@
+/* Everything Liquid */
+.CodeMirror .cm-liquid {
+	background-color: #eee;
+	background-color: rgba(
+		200,
+		200,
+		200,
+		0.5
+	); /* for newer browsers, use transparent background, so selection is visible behind it */
+
+	color: #000;
+}
+
+.cm-liquid.CodeMirror-searching {
+	background: #ffa;
+	background: rgba(255, 255, 0, 0.4);
+}
+
+/* Number constants */
+.CodeMirror .cm-liquid-atom {
+	color: #a0b;
+}
+
+/* String constants */
+.CodeMirror .cm-liquid-string {
+	color: #281;
+}
+
+/* {{, }}, {%, %} */
+.CodeMirror .cm-liquid-markup-delimiter {
+	color: #555;
+}
+
+/* The name of a Liquid tag (if, assign, for, ...) */
+.CodeMirror .cm-liquid-tag-name {
+	font-weight: bold;
+}
+
+/* The closing name of a Liquid block tag (endif, endfor) */
+.CodeMirror .cm-liquid-endtag-name {
+	font-weight: bold;
+}
+
+/* Keywords (in, reversed, with, ...) */
+.CodeMirror .cm-liquid-keyword {
+	font-weight: bold;
+}
+
+/* The name of a Tag attribute (limit, offset) */
+.CodeMirror .cm-liquid-tag-attribute-name {
+	font-style: italic;
+}
+
+/* A method of a drop */
+.CodeMirror .cm-liquid-method {
+	font-style: italic;
+}
+
+/* The name one can give to a cycle tag */
+.CodeMirror .cm-liquid-tag-cycle-name {
+	font-style: italic;
+}
+
+/* A filter in output markdown */
+.CodeMirror .cm-liquid-filter {
+	font-style: italic;
+}

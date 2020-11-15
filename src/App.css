@@ -11,6 +11,7 @@
 
 .edit-area {
 	grid-area: Template;
+	border-bottom: 1px solid white;
 }
 
 .preview-area {
@@ -19,4 +20,8 @@
 
 .data-area {
 	grid-area: Data;
+}
+
+.CodeMirror {
+	height: 100% !important;
 }

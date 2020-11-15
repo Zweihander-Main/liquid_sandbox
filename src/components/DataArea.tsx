@@ -1,4 +1,6 @@
 import React from 'react';
+import { UnControlled as CodeMirror } from 'react-codemirror2';
+import 'codemirror/mode/javascript/javascript.js';
 
 type DataAreaProps = {
 	className: string;
@@ -7,11 +9,18 @@ type DataAreaProps = {
 
 const DataArea: React.FC<DataAreaProps> = ({ className, setData }) => {
 	return (
-		<textarea
+		<CodeMirror
 			className={className}
-			onInput={(e) => setData(e.currentTarget.value)}
-			defaultValue={'{}'}
-		></textarea>
+			value="{}"
+			options={{
+				mode: { name: 'javascript', json: true },
+				theme: 'material',
+				lineNumbers: true,
+			}}
+			onChange={(editor, data, value) => {
+				setData(value);
+			}}
+		/>
 	);
 };
 
