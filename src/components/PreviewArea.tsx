@@ -21,13 +21,13 @@ const PreviewArea: React.FC<PreviewAreaProps> = ({
 			void engine
 				.parseAndRender(template || ' ', dataObject)
 				.catch(() => {
-					setMarkup('Error');
+					setMarkup('Error rendering template');
 				})
 				.then(
 					(returnMarkup) => returnMarkup && setMarkup(returnMarkup)
 				);
 		} catch (e) {
-			setMarkup('Error');
+			setMarkup('Error with provided data');
 		}
 	}, [template, data]);
 	return (
