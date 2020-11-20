@@ -20,7 +20,7 @@ body {
 
 .preview-area {
 	grid-area: Preview;
-	height: 50vh;
+	overflow: auto;
 	width: 50vw;
 }
 
